@@ -9,8 +9,13 @@ body
   background-color: $back
   color: $text
 
-h1, h2, h3, h4, p, ul, fieldset
+h1, h2, h3, h4, p, ul
   margin: 0
+
+fieldset
+  margin: 0
+  padding: 0
+  border: none
 
 ul
   list-style: none
@@ -43,3 +48,9 @@ img
 .visually-hidden
   position: fixed
   transform: scale(0)
+
+.stars
+  display: flex
+  align-items: center
+  gap: 2px
+  line-height: 0

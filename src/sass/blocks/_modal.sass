@@ -1,2 +1,41 @@
 .modal
   display: none
+  position: fixed
+  inset: 0
+  padding: 40px
+  overflow-y: auto
+  cursor: pointer
+  background-color: rgba(#000, .6)
+  &__title
+    font-weight: 400
+    font-size: 24px
+    text-align: center
+    margin-bottom: 24px
+  &_person
+    display: flex
+  &__body
+    position: relative
+    cursor: default
+    margin: auto
+    max-width: 768px
+    width: 100%
+    background: #F2F5FC
+    border-radius: 12px
+    padding: 24px 20px 48px
+  &__container
+    max-width: 632px
+    margin: 0 auto
+  &__close
+    position: absolute
+    top: -20px
+    right: -20px
+    display: flex
+    align-items: center
+    justify-content: center
+    width: 40px
+    height: 40px
+    background-color: #fff
+    border-radius: 50%
+    color: #7B7B7B
+    &:hover
+      color: #000

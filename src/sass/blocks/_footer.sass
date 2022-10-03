@@ -1,1 +1,16 @@
-
+.footer
+  padding: 55px 0
+  &__container
+    display: grid
+    gap: 14px
+    grid-template-areas: "logo 0" "copyright contact"
+  &__logo
+    grid-area: logo
+  &__copyright
+    grid-area: copyright
+    align-self: end
+  &__contact
+    grid-area: contact
+    justify-self: end
+    & p:not(:last-child)
+      margin-bottom: 7px

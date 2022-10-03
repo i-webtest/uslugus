@@ -3,14 +3,17 @@
   background-color: #fff
   border-radius: 8px
   display: grid
-  grid-template-areas: "avatar present price" "0 0 review"
+  grid-template-areas: "avatar present price" "contacts contacts review"
   grid-template-columns: 50px 1fr max-content
   gap: 20px 24px
+  &_person
+    gap: 40px 14px
   &__avatar
     grid-area: avatar
   &__present
     grid-area: present
   &__title
+    font-weight: 400
     font-size: 24px
     margin-bottom: 10px
   &__name
@@ -18,15 +21,40 @@
   &__price
     grid-area: price
     font-size: 24px
-    align-items: right
+    text-align: right
+  &__contacts
+    grid-column: 1 / 3
+    display: flex
+    flex-direction: column
+    gap: 8px
+  &__link
+    position: relative
+    display: flex
+    align-items: center
+    gap: 9px
+    width: max-content
+    &::before
+      content: ""
+      display: block
+      width: 24px
+      height: 24px
+      background-repeat: no-repeat
+      background-size: contain
+      background-position: center
+    &_phone::before
+      background-image: url("../img/modal/phone.svg")
+    &_email::before
+      background-image: url("../img/modal/email.svg")
   &__review
     grid-area: review
     display: flex
+    justify-content: flex-end
+    align-items: flex-end
     gap: 16px
   &__stars
     display: flex
     gap: 2px
     align-items: center
   &__count-review
-    padding: 18px
+    padding-left: 18px
     background: url("../img/service/icon-comments.svg") left/14px no-repeat
