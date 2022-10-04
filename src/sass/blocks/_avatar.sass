@@ -1,6 +1,8 @@
 .avatar
   &__label
     display: flex
+    align-items: center
+    flex-wrap: wrap
     gap: 11px
     cursor: pointer
     &:hover
@@ -16,6 +18,8 @@
     &:focus + .avatar__input-text
       background-color: #DAFFD7
       border: 1px solid #096601
+    &-text
+      display: inline-block
     &-wrapper
       position: relative
     &-text
