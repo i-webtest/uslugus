@@ -1,0 +1,28 @@
+@import "~choices.js/public/assets/styles/choices.min.css"
+
+.choices
+  position: relative
+  z-index: 333
+  &__inner
+    display: flex
+    align-items: center
+    height: 46px
+    background-color: #fff
+    border: none
+    border-radius: 8px
+    padding: 10px 14px
+  &__list[aria-expanded]
+    border: none
+// .choices__list--dropdown.choices__item--selectable
+//   padding-right: 0
+.choices__list--dropdown .choices__item--selectable, .choices__list[aria-expanded] .choices__item--selectable
+  padding-right: 0
+.choices[data-type*=select-one]::after
+  width: 20px
+  height: 20px
+  background-image: url("../img/down.svg")
+  top: 50%
+  margin-top: -10px
+  border: none
+.choices[data-type*=select-one].is-open::after
+  transform: rotate(180deg)

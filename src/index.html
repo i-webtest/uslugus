@@ -110,28 +110,28 @@
 
             <ul class="category__list">
               <li class="category__item">
-                <button class="category__btn category__btn_photographer">Фотограф</button>
+                <button class="category__btn category__btn_photographer" data-value="photographer">Фотограф</button>
               </li>
               <li class="category__item">
-                <button class="category__btn category__btn_makeup">Визажист</button>
+                <button class="category__btn category__btn_makeup" data-value="makeup">Визажист</button>
               </li>
               <li class="category__item">
-                <button class="category__btn category__btn_masseur">Массажист</button>
+                <button class="category__btn category__btn_masseur" data-value="masseur">Массажист</button>
               </li>
               <li class="category__item">
-                <button class="category__btn category__btn_handyman">Муж на час</button>
+                <button class="category__btn category__btn_handyman" data-value="handyman">Муж на час</button>
               </li>
               <li class="category__item">
-                <button class="category__btn category__btn_cosmetologist">Косметолог</button>
+                <button class="category__btn category__btn_cosmetologist" data-value="cosmetologist">Косметолог</button>
               </li>
               <li class="category__item">
-                <button class="category__btn category__btn_electrician">Электрик</button>
+                <button class="category__btn category__btn_electrician" data-value="electrician">Электрик</button>
               </li>
               <li class="category__item">
-                <button class="category__btn category__btn_manicurist">Мастер маникюра</button>
+                <button class="category__btn category__btn_manicurist" data-value="manicurist">Мастер маникюра</button>
               </li>
               <li class="category__item">
-                <button class="category__btn category__btn_plumber">Сантехник</button>
+                <button class="category__btn category__btn_plumber" data-value="plumber">Сантехник</button>
               </li>
             </ul>
           </div>
@@ -378,8 +378,6 @@
                   Калининграде. Всё прошло на позитиве, комфортно и приятно. Фото получились классные! Я очень довольна!
                   Рекомендую! Спасибо, Максим!
                 </p>
-
-                <button class="review__open review__open_text">Развернуть</button>
               </li>
 
               <li class="review__item">
@@ -393,13 +391,11 @@
                   <img class="stars__item" src="./img/services/star-o.svg" alt="" />
                 </div>
 
-                <p class="review__text review__text_open">
+                <p class="review__text">
                   Попросила Максима сделать фотосессию на фоне достопримечательностей, так как была в отпуске в
                   Калининграде. Всё прошло на позитиве, комфортно и приятно. Фото получились классные! Я очень довольна!
                   Рекомендую! Спасибо, Максим!
                 </p>
-
-                <button class="review__open review__open_text">Свернуть</button>
               </li>
             </ul>
 
@@ -546,7 +542,7 @@
             <label class="form__label">
               <span class="form__text">Категория</span>
 
-              <select class="form__select">
+              <select class="form__select form__select_category">
                 <option class="form__option" value="">Выберите категорию</option>
                 <option class="form__option" value="photographer">Фотограф</option>
                 <option class="form__option" value="makeup">Визажист</option>
@@ -563,7 +559,7 @@
               <label class="form__text" for="price">Цена</label>
 
               <div class="form__wrapper-price">
-                <select class="form__select form__select-price">
+                <select class="form__select form__select_price">
                   <option class="form__option" value="from">от</option>
                   <option class="form__option" value="exectly">равно</option>
                   <option class="form__option" value="up to">до</option>
@@ -584,7 +580,7 @@
               <label class="form__text" for="password">Пароль</label>
 
               <div class="form__password">
-                <input type="password" class="form__input" id="password" />
+                <input type="password" class="form__input form__input_password" id="password" />
                 <button class="form__password-eye" type="button" aria-label="показать пароль"></button>
               </div>
             </div>
@@ -593,7 +589,7 @@
               <label class="form__text" for="password-repeat">Повторите пароль</label>
 
               <div class="form__password">
-                <input type="password" class="form__input" id="password-repeat" />
+                <input type="password" class="form__input form__input_password" id="password-repeat" />
                 <button class="form__password-eye" type="button" aria-label="показать пароль"></button>
               </div>
             </div>
@@ -646,7 +642,7 @@
               <label class="form__text" for="password-in">Пароль</label>
 
               <div class="form__password">
-                <input type="password" class="form__input" id="password-in" />
+                <input type="password" class="form__input form__input_password" id="password-in" />
                 <button class="form__password-eye" type="button" aria-label="показать пароль"></button>
               </div>
             </div>
