@@ -4,8 +4,6 @@ import { directions } from "./const";
 import { createStars } from "./createStars";
 
 export const createCard = (item) => {
-  console.log(item);
-
   const { avatar, category, comments, direction, id, name, surname, price } = item;
 
   const serviceItem = document.createElement("li");
@@ -50,30 +48,3 @@ export const createCard = (item) => {
   service.append(serviceAvatar, servicePresent, servicePrice, serviceReview);
   return serviceItem;
 };
-
-`
-<li class="services__item">
-  <article class="service">
-    <img src="./img/services/photo.png" alt="аватар" class="service__avatar" />
-
-    <div class="service__present">
-      <h3 class="service__title">Фотограф</h3>
-      <p class="service__name">Иван П.</p>
-    </div>
-
-    <p class="service__price">от 4000 ₽</p>
-
-    <div class="service__review">
-      <div class="service__stars">
-        <img class="service__star" src="./img/services/star.svg" alt="Рейтинг специалиста 4 из 5" />
-        <img class="service__star" src="./img/services/star.svg" alt="" />
-        <img class="service__star" src="./img/services/star.svg" alt="" />
-        <img class="service__star" src="./img/services/star.svg" alt="" />
-        <img class="service__star" src="./img/services/star-o.svg" alt="" />
-      </div>
-
-      <p class="service__count-review">4</p>
-    </div>
-  </article>
-</li>
-`;
